@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="./../../bootstrap-1/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body style="background-image:url(./b.jpg); background-size: cover;">
+
+<div class="container d-flex flex-wrap  justify-content-evenly mt-5  ">
+
+    
+    <div class="bg-secondary p-4 " style="border: 2px solid black; border-radius: 25px;width: 550px;border: none;">
+
+        <!-- ------------------------ -->
+        <div class="row align-items-center mb-4 mt-3 ps-5 ">
+            <div class="col-sm-8 col-md-8 col-lg-6 col-xl-6 col-xxl-6  ">
+                <div class="text-warning text-center" style="font-size: 25px; font-family: 'Times New Roman', serif; font-weight: bolder;">Enter Marks</div>
+            </div>
+           
+        </div>
+
+
+        <!-- Tamil Mark -->
+        <div class="row align-items-center mb-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <label for="a" class="text-white" style="font-size: 19px; font-family: 'Times New Roman', serif; font-weight: bold;">Tamil Mark</label>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <input id="a" type="number" style="font-size: 19px; border-radius: 7px; text-align: center; border: none;">
+            </div>
+        </div>
+
+        <!-- English Mark -->
+        <div class="row align-items-center mb-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <label for="b" class="text-white" style="font-size: 17px; font-family: 'Times New Roman', serif; font-weight: bold;">English Mark</label>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <input id="b" type="number" style="font-size: 19px;border-radius: 7px;text-align: center;border: none;">
+            </div>
+        </div>
+
+        <!-- Maths Mark -->
+        <div class="row align-items-center mb-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <label for="c" class="text-white" style="font-size: 19px; font-family: 'Times New Roman', serif; font-weight: bold;">Maths Mark</label>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <input id="c" type="number" style="font-size: 19px;border-radius: 7px; text-align: center;border: none;">
+            </div>
+        </div>
+
+        <!-- Science Mark -->
+        <div class="row align-items-center mb-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <label for="d" class="text-white" style="font-size: 18px; font-family: 'Times New Roman', serif; font-weight: bold;">Science Mark</label>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <input id="d" type="number" style="font-size: 19px;border-radius: 7px; text-align: center;border: none;">
+            </div>
+        </div>
+
+        <!-- Social Mark -->
+        <div class="row align-items-center mb-4">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <label for="e" class="text-white" style="font-size: 19px; font-family: 'Times New Roman', serif; font-weight: bold;">Social Mark</label>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <input id="e" type="number"  style="font-size: 19px;border-radius: 7px; text-align: center;border: none;">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row justify-content-center  mb-2">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <button onclick="s1()" class="btn btn-danger" style="border-radius: 7px;">Submit</button>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 ">
+                <button onclick="s2()" class="btn btn-info" style="border-radius: 7px;">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Table -->
+
+    <div class=" mt-5 " style="width: 550px;">
+        <table class=" table table-bordered ">
+            
+                <tr class="bg-danger text-center text-white">
+                    <th>No. of</th>
+                    <th>Subject</th>
+                    <th>Mark</th>
+                    <th>Result</th>
+                </tr>
+            
+                <tr class="text-center">
+                    <td class="text-white">1</td>
+                    <td class="text-white">Tamil</td>
+                    <td id="d1" style="font-weight: bolder;"></td>
+                    <td id="b1"></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-white">2</td>
+                    <td class="text-white">English</td>
+                    <td id="d2"></td>
+                    <td id="b2"></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-white">3</td>
+                    <td class="text-white">Maths</td>
+                    <td id="d3"></td>
+                    <td id="b3"></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-white">4</td>
+                    <td class="text-white">Science</td>
+                    <td id="d4"></td>
+                    <td id="b4"></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-white">5</td>
+                    <td class="text-white">Social</td>
+                    <td id="d5"></td>
+                    <td id="b5"></td>
+                </tr>
+                <tr class="text-center fw-bold">
+                    <td colspan="2" class="text-white" style="text-align: end;">Total Marks</td>
+                    <td id="d6" colspan="2"></td>
+                </tr>
+        
+        </table>
+    </div>
+</div>
+
+
+    <script src="./table.js"></script>
+</body>
+</html>
